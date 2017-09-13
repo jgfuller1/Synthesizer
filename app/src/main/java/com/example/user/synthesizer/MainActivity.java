@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         wireWidgets();
         setListeners();
-        //createdMediaPlayers();
+        //creates array notes with all notes
         notes = new MediaPlayer[]{
                 aNote = MediaPlayer.create(this, R.raw.scalea),
                 asNote = MediaPlayer.create(this, R.raw.scalebb),
@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         play2Button.setOnClickListener(this);
         dontButton.setOnClickListener(this);
     }
+    //IN CASE THE ARRAY BRAKES
 //    private void createdMediaPlayers() {
 //        notes =  {
 //                aNote = MediaPlayer.create(this, R.raw.scalea),
@@ -158,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View view) { //what to do for each button.
         switch (view.getId()) {
             case R.id.button_play2:
                 cNote.seekTo(0);
