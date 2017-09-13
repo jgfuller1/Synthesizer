@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     delayPlaying(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }
+                } //rest for 3 seconds to add confusion
                 for (MediaPlayer b : notes) {
                     b.seekTo(0);
                     b.start();
