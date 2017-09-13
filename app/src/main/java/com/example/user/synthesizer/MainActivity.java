@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    public void onClick(View view) { //what to do for each button.
+    public void onClick(View view) { //what to do for each button..
         switch (view.getId()) {
             case R.id.button_play2:
                 cNote.seekTo(0);
